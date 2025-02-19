@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.button_container {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+}
+
