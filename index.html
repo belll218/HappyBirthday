@@ -16,37 +16,37 @@
             }
         </style>
     </head>
+
+    <body>
+        <h1 id="Question">Happy Birthday</h1>
+        <h1 class="emoji">💩</h1>
+        <div class="button_container">
+            <a href="next.html">
+                <button type="submit" class="button" id="yes" onclick="func"> Yes </button>
+            </a>
+            <button type="button" class="button" id="no" onclick="func"> No </button>
+        </div>
+
+        <script>
+            var yesButton = document.getElementById("yes");
+            var noButton = document.getElementById("no");
+
+            var text = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            var i = 0;
+
+            yesButton.addEventListener("click", function() {
+            });
+
+            noButton.addEventListener("click", function() {
+                noButton.innerHTML = text[i];
+                
+                yesButton.style.width = (300 + 10 * 2**i) + "px"
+                yesButton.style.height = (70 + 10 * 2**i) + "px"
+                yesButton.style.fontSize = (20 + 10 * 1.5**i) + "px"
+                i = (i + 1) % text.length
+            });
+
+
+        </script>
+    </body>
 </html>
-
-<body>
-    <h1 id="Question">Happy Birthday</h1>
-    <h1 class="emoji">💩</h1>
-    <div class="button_container">
-        <a href="next.html">
-            <button type="submit" class="button" id="yes" onclick="func"> Yes </button>
-        </a>
-        <button type="button" class="button" id="no" onclick="func"> No </button>
-    </div>
-
-    <script>
-        var yesButton = document.getElementById("yes");
-        var noButton = document.getElementById("no");
-
-        var text = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        var i = 0;
-
-        yesButton.addEventListener("click", function() {
-        });
-
-        noButton.addEventListener("click", function() {
-            noButton.innerHTML = text[i];
-            
-            yesButton.style.width = (300 + 10 * 2**i) + "px"
-            yesButton.style.height = (70 + 10 * 2**i) + "px"
-            yesButton.style.fontSize = (20 + 10 * 1.5**i) + "px"
-            i = (i + 1) % text.length
-        });
-
-
-    </script>
-</body>
