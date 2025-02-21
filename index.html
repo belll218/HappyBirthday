@@ -9,10 +9,10 @@
 
         <style>
             #yes {
-                color:lightpink;
+                background-color:lightpink;
             }
             #no {
-                color:rgb(88, 240, 240)
+                background-color:rgb(88, 240, 240)
             }
         </style>
     </head>
@@ -38,9 +38,9 @@
         noButton.addEventListener("click", function() {
             noButton.innerHTML = text[i];
             
-            yesButton.style.width = (300 + 10 * i) + "px"
-            yesButton.style.height = (70 + 10 * i) + "px"
-            yesButton.style.fontSize = (20 + 10 * i) + "px"
+            yesButton.style.width = (300 + 10 * 2**i) + "px"
+            yesButton.style.height = (70 + 10 * 2**i) + "px"
+            yesButton.style.fontSize = (20 + 10 * 1.5**i) + "px"
             i = (i + 1) % text.length
         });
 
