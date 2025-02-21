@@ -1,7 +1,7 @@
 body {
     text-align: center;
     margin-top: 80px;
-    background-color:darkolivegreen
+    background-color:bisque;
 }
 
 .button_container {
@@ -15,5 +15,8 @@ body {
     padding: 10px 20px;
     font-family: 'Times New Roman', Times, serif;
     color:beige;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
 }
 
