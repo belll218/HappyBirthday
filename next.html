@@ -6,19 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet">
         <title>Happy Birthday!! </title>
-    </head>
 
     <style>
         #text {
             color:darkslateblue;
         }
+
+        .move {
+            position: absolute;
+            left: 0;
+            animation: moveUpDown 3s ease-in-out infinite;
+        }
+
+        @keyframes moveUpDown {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(100px); }
+            100% { transform: translateY(0px); }
+        }
     </style>
-</html>
+    </head>
 
 <body>
     <h1 id="text">Happy Birthday!!!</h1>
     <div>
-        <img src="Birthday_gif.gif" style="width:500px;height:300px;">
-        <img src="serenea_birthdaymeme.jpg" style="width:500px;height:300px;">
+        <img src="Birthday_gif.gif" class="move" style="width:500px;height:300px;">
+        <img src="serenea_birthdaymeme.jpg" class="move" style="width:500px;height:300px;">
     </div>
 </body>
+</html>
