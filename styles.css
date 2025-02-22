@@ -19,11 +19,11 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.3;
 }
 
-.button.hover {
+.button:hover {
     opacity: 1;
 }
 
