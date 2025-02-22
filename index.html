@@ -10,6 +10,7 @@
         <style>
             #yes {
                 background-color:palevioletred;
+                transition: width 2s;
             }
             #no {
                 background-color:steelblue
@@ -18,20 +19,21 @@
     </head>
 
     <body>
-        <h1 id="Question">Happy Birthday</h1>
+        <h1 id="Question">这是你的生日礼物:)</h1>
+        <h1>吃掉它！！</h1>
         <h1 class="emoji">💩</h1>
         <div class="button_container">
             <a href="next.html">
-                <button type="submit" class="button" id="yes" onclick="func"> Yes </button>
+                <button type="submit" class="button" id="yes" onclick="func"> 好呀好呀！！ </button>
             </a>
-            <button type="button" class="button" id="no" onclick="func"> No </button>
+            <button type="button" class="button" id="no" onclick="func"> 不要 </button>
         </div>
 
         <script>
             var yesButton = document.getElementById("yes");
             var noButton = document.getElementById("no");
 
-            var text = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            var text = ["为什么！", "好不好嘛", "多有创意", "多惊喜呀", "快快快", "🥺", "哎呀", "呜呜", "生日快乐", "very good 礼物"];
             var i = 0;
 
             yesButton.addEventListener("click", function() {
@@ -42,7 +44,7 @@
                 
                 yesButton.style.width = (300 + 10 * 2**i) + "px"
                 yesButton.style.height = (70 + 10 * 2**i) + "px"
-                yesButton.style.fontSize = (20 + 10 * 1.5**i) + "px"
+                yesButton.style.fontSize = (20 + 10 * 2**i) + "px"
                 i = (i + 1) % text.length
             });
 
